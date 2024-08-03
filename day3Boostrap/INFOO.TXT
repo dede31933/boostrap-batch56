@@ -1,0 +1,12 @@
+=========================================================================
+JNGAN LUPA!!!!!!!!!!!!
+ini belumberes dari Updatedeletnya dan diteil project belum di seting
+untuk edit dan delet lihat dulu smpai bisa conect
+===================================================================
+================================================================================
+3. Fetch/Menampilkan Data Detail Project (By Index)
+4. Update Data Project (By Index) -> improvement : buat nambahin nilai
+5. Delete Data Project (By Index)
+
+Tampilan mockup Halaman Update Project dapat dilihat pada bagian attachment
+===================================================================================================================================================================

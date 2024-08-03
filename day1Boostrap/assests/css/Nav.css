@@ -1,0 +1,13 @@
+.navbar-nav .nav-link {
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.navbar-brand img {
+  height: 34px;
+  margin-right: 25px;
+}
+
+.btn-secondary .contact-link {
+  color: white;
+}
