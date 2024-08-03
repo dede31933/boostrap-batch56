@@ -1,0 +1,21 @@
+=========================================================================
+JNGAN LUPA!!!!!!!!!!!!
+ini belumberes dari Updatedeletnya dan diteil project belum di seting
+untuk edit dan delet lihat dulu smpai bisa conect
+===================================================================
+================================================================================
+untuk lebih enak
+npm install pg pg-hstore
+npm install sequelize sequelize-cli
+=======================================================================
+# Inisialisasi proyek Sequelize
+npx sequelize-cli init
+
+# Generate model dengan atribut yang diinginkan
+npx sequelize-cli model:generate --name Project --attributes name:string,start_date:date,end_date:date,descriptions:text,technologies:string,image:string
+=====================================================================
+ini untuk ngedeploy ke postgres
+npx sequelize-cli db:migrate
+ini tinggal pake postgres sama sequelize dan ubah ubah sedikit nanti
+ini tinggal conect kan ke postgers dan seting lagi squilizenya
+===================================================================================================================================================================
