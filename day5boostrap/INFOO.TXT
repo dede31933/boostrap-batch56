@@ -1,0 +1,19 @@
+================================================================================
+untuk lebih enak
+npm install pg pg-hstore
+npm install sequelize sequelize-cli
+=======================================================================
+# Inisialisasi proyek Sequelize
+npx sequelize-cli init
+
+# Generate model dengan atribut yang diinginkan
+npx sequelize-cli model:generate --name Project --attributes name:string,start_date:date,end_date:date,descriptions:text,technologies:string,image:string
+npx sequelize-cli model:generate --name User --attributes name:string,email:string,password:string
+
+=====================================================================
+ini untuk ngedeploy ke postgres
+npx sequelize-cli db:migrate
+ini tinggal pake postgres sama sequelize dan ubah ubah sedikit nanti
+ini tinggal conect kan ke postgers dan seting lagi squilizenya
+===================================================================================================================================================================
+tinggal day 15

@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/src/assests/css/Nav.css" />
+    <link rel="stylesheet" href="/src/assests/css/testimonials.css" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/src/assests/image/logggo.png" alt="ini logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/AddmyProject">Add Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/testimonial">Testimonial</a>
+          </li>
+        </ul>
+        <div class="d-flex ms-auto">
+          {{#if isLogin}}
+            <div class="user-info text-center">
+              <p class="mb-1">{{user.name}}</p>
+              <div class="button-group">
+                <a href="/logout" class="d-inline">
+                  <button class="btn btn-gray btn-spacing">Logout</button>
+                </a>
+              </div>
+            </div>
+          {{else}}
+            <a href="/login" class="btn btn-gray btn-spacing">Login</a>
+            <a href="/register" class="btn btn-gray btn-spacing">Register</a>
+            <a href="/contact" class="btn btn-gray btn-spacing">Contact Me</a>
+          {{/if}}
+        </div>
+      </div>
+    </nav>
+    <!-- navbar content end -->
+
+    <!-- content strat -->
+    <div class="container">
+      <h1 class="text-center mb-4">My Testimonials</h1>
+      <div class="text-center mb-4">
+        <h2>Rating By Star</h2>
+        <div class="btn-group ranting" role="group" aria-label="Rating filter">
+          <button
+            class="btn btn-outline-secondary"
+            onclick="allTestimonial()"
+          >All</button>
+          <button
+            class="btn btn-outline-secondary"
+            onclick="filterTestimonial(1)"
+          >1 <i class="fas fa-star"></i></button>
+          <button
+            class="btn btn-outline-secondary"
+            onclick="filterTestimonial(2)"
+          >2 <i class="fas fa-star"></i></button>
+          <button
+            class="btn btn-outline-secondary"
+            onclick="filterTestimonial(3)"
+          >3 <i class="fas fa-star"></i></button>
+          <button
+            class="btn btn-outline-secondary"
+            onclick="filterTestimonial(4)"
+          >4 <i class="fas fa-star"></i></button>
+          <button
+            class="btn btn-outline-secondary"
+            onclick="filterTestimonial(5)"
+          >5 <i class="fas fa-star"></i></button>
+        </div>
+      </div>
+      <!-- content pertama -->
+      <div class="row testimonials" id="testimonials">
+      </div>
+    </div>
+    <!-- content end -->
+
+    <script src="/src/assests/js/testimonial.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>

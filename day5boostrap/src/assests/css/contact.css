@@ -1,0 +1,37 @@
+body {
+  background-color: #4444;
+}
+
+.contact-container {
+  padding: 30px;
+  border-radius: 10px;
+  width: 800px;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group input,
+.form-group select {
+  height: 45px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.submit-container {
+  text-align: right;
+}
+
+.btn-custom {
+  background-color: #3d3e3f;
+  color: white;
+  width: 100px;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}

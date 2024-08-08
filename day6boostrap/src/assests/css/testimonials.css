@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4444;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%
+}
+
+.card {
+  border: none;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-text {
+  text-align: start;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  text-align: end;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #3878cc;
+  margin-bottom: 10px;
+}
+
+.rating {
+  text-align: end;
+}
+
+.rating i {
+  color: #FFD700;
+}
+
+.btn-group .btn {
+  min-width: 90px;
+}

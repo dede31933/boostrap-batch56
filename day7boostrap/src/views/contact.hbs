@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/src/assests/css/Nav.css" />
+    <link rel="stylesheet" href="/src/assests/css/contact.css" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/src/assests/image/logggo.png" alt="ini logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/AddmyProject">Add Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/testimonial">Testimonial</a>
+          </li>
+        </ul>
+        <div class="d-flex ms-auto">
+          {{#if isLogin}}
+            <div class="user-info text-center">
+              <p class="mb-1">{{user.name}}</p>
+              <div class="button-group">
+                <a href="/logout" class="d-inline">
+                  <button class="btn btn-gray btn-spacing">Logout</button>
+                </a>
+              </div>
+            </div>
+          {{else}}
+            <a href="/login" class="btn btn-gray btn-spacing">Login</a>
+            <a href="/register" class="btn btn-gray btn-spacing">Register</a>
+            <a href="/contact" class="btn btn-gray btn-spacing">Contact Me</a>
+          {{/if}}
+        </div>
+      </div>
+    </nav>
+    <!-- navbar content end -->
+
+    <!-- content start -->
+    <div class="container mt-5 contact-container">
+      <form class="form-contact" onsubmit="return submitData()">
+        <h1>GET IN TOUCH</h1>
+
+        <div class="form-group">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" required />
+        </div>
+
+        <div class="form-group">
+          <label for="inputPhone">Phone Number</label>
+          <input
+            type="tel"
+            id="inputPhone"
+            class="form-control"
+            pattern="[0-9]{10,15}"
+            title="Please enter a valid phone number (10-15 digits)"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="inputSubject">Subject</label>
+          <select class="form-control" id="inputSubject" required>
+            <option hidden>Select a Subject</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Fullstack Developer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="inputMessage">Your Message</label>
+          <textarea
+            class="form-control"
+            id="inputMessage"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+
+        <div class="submit-container">
+          <button
+            type="submit"
+            class="btn btn-primary btn-custom"
+          >Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- content end -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    ></script>
+    <script src="/src/assests/js/contact.js"></script>
+  </body>
+</html>

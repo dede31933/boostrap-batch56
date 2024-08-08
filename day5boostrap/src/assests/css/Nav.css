@@ -1,0 +1,38 @@
+.navbar-nav .nav-link {
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.navbar-brand img {
+  height: 34px;
+  margin-right: 25px;
+}
+
+.btn-secondary .contact-link {
+  color: white;
+}
+
+/* Atur warna dan margin untuk tombol */
+.navbar .btn-spacing {
+  margin-right: 10px;
+}
+
+.navbar .btn-gray {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(41, 41, 41);
+  color: white;
+  /* Sesuaikan jika ingin warna teks berbeda */
+}
+
+/* Ubah warna tombol saat kursor berada di atasnya */
+.navbar .btn-gray:hover {
+  background-color: rgb(206, 42, 42);
+  border-color: rgb(206, 42, 42);
+  color: white;
+  /* Sesuaikan jika ingin warna teks berbeda */
+}
+
+/* Hilangkan margin kanan pada tombol terakhir */
+.navbar .btn-spacing:last-child {
+  margin-right: 0;
+}

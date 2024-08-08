@@ -25,7 +25,7 @@ function edit(req, res) {
     image: image,
     technologies: Array.isArray(technologies) ? technologies : [technologies]
   };
-  res.redirect("/"); // Redirect ke halaman utama
+  res.redirect("/");
 }
 
 function deleteget(req, res) {

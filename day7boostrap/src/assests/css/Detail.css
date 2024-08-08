@@ -1,0 +1,14 @@
+.project-technologies .technologies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.project-technologies .technology {
+  display: flex;
+  align-items: center;
+}
+
+.project-technologies .technology i {
+  margin-right: 5px;
+}

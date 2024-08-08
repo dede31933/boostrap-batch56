@@ -1,0 +1,66 @@
+body {
+  background-color: #4444;
+}
+
+.container {
+  padding: 20px;
+  width: 750px;
+  border-radius: 7px;
+}
+
+.label-contact {
+  font-weight: bold;
+}
+
+.form-contact h1 {
+  text-align: center;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 8px;
+}
+
+.technologies .left-tech,
+.technologies .right-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.btn-secondary a {
+  color: white;
+}
+
+.line {
+  margin-top: 50px;
+}
+
+.input-group .input-group-text i {
+  font-size: 1.2rem;
+}
+
+.input-group input[type="file"] {
+  padding: 5px;
+}
+
+#submitButton {
+  float: right;
+}
